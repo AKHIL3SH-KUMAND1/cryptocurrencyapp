@@ -1,0 +1,5 @@
+.Topbar{
+    border-bottom: 1rem;
+    border-color: #eaecf1;
+    color: var(--bs-indigo);  
+}

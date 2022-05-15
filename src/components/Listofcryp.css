@@ -1,0 +1,32 @@
+.first{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+tbody>tr{
+    text-align: center;
+    justify-content: center;
+}
+thead{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: large;
+}
+.rank{
+    text-align: center;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10%;
+    gap:10px
+}
+.response.hidden{
+    display: none;
+}
+.response.show{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
