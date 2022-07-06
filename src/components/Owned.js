@@ -14,7 +14,7 @@ const Owned = () => {
         console.log(cryptos)
     }
     const deleteById = async(id) =>{
-        let response= await axios.delete(`http://localhost:4000/cryptos/${id}`)
+        await axios.delete(`http://localhost:4000/cryptos/${id}`)
         getCryptos()
         
     }
@@ -24,7 +24,7 @@ const Owned = () => {
             <div className='row row-cols-1 row-cols-sm-1 row-cols-md-1  m-3 flex justify-content-evenly'>
                 {
                     cryptos.map((Obj, index) => <div key={index} className='card bg-dark p-3 col-sm-12 col-md-12npm col-lg-5 m-3'>
-                        <img src={Obj.icon} width="50px" />
+                        <img src={Obj.icon} alt='tp' width="50px" />
                         <div className='card-body'>
                             <ul className='lead'>
                                 <li>Name : {Obj.name}</li>
